@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="801.0" prefWidth="1478.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devit.workit.gui.AddFreelancerController">
+   <TabPane layoutX="304.0" layoutY="243.0" prefHeight="522.0" prefWidth="1109.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="FREELANCER">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                      <TextField fx:id="tfname" layoutX="77.0" layoutY="69.0" promptText="name" />
+                      <TextField fx:id="tfpassword" layoutX="77.0" layoutY="106.0" promptText="password" />
+                      <TextField fx:id="tftitle" layoutX="77.0" layoutY="142.0" promptText="title" />
+                      <TextField fx:id="tfskills" layoutX="77.0" layoutY="176.0" promptText="skills" />
+                      <TextField fx:id="tfcountry" layoutX="77.0" layoutY="209.0" promptText="country" />
+                      <TextField fx:id="tfprix" layoutX="77.0" layoutY="245.0" promptText="prix" />
+                      <TextField fx:id="tfemail" layoutX="77.0" layoutY="31.0" promptText="email" />
+                      <TextField fx:id="tfexperience" layoutX="77.0" layoutY="318.0" promptText="experience" />
+                      <TextField fx:id="tfeducation" layoutX="77.0" layoutY="280.0" promptText="education" />
+                      <Button id="template_button" fx:id="btnajouter" layoutX="37.0" layoutY="380.0" mnemonicParsing="false" onAction="#ajouterfreelancer" stylesheets="@style.css" text="Ajouter" />
+                  
+                                        <Button fx:id="btnmodifier" layoutX="126.0" layoutY="380.0" mnemonicParsing="false" onAction="#modifierfreelancer" stylesheets="@style.css" text="Modifier" />
+                      <Button fx:id="btndelete" layoutX="215.0" layoutY="380.0" mnemonicParsing="false" onAction="#deletefreelancer" stylesheets="@style.css" text="Delete" />
+                      <Button id="button" fx:id="print" layoutX="26.0" layoutY="438.0" mnemonicParsing="false" onAction="#pdfs" stylesheets="@style.css" text="Print" />
+                     <Button fx:id="projet" layoutX="525.0" layoutY="446.0" mnemonicParsing="false" onAction="#sendToScene2" stylesheets="@style.css" text="Projet" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+
+    <AnchorPane layoutX="-8.0" prefHeight="800.0" prefWidth="283.0" style="-fx-background-color: #D3D3D3;">
+        <children>
+            <AnchorPane prefHeight="153.0" prefWidth="283.0" style="-fx-background-color: #A9A9A9;">
+                <children>
+                    <Label layoutX="33.0" layoutY="37.0" prefHeight="79.0" prefWidth="221.0" text="ESPRIT WORK" textFill="#126f80">
+                        <font>
+                            <Font name="System Italic" size="31.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="668.0" prefHeight="133.0" prefWidth="267.0" styleClass="test" stylesheets="@style.css" />
+        </children>
+    </AnchorPane>
+    <Button id="menu" fx:id="users" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#checkuser" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Profil" />
+    <Button id="menu" layoutY="278.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" styleClass="clicked" stylesheets="@style.css" text="Freelancer" />
+    <Button id="menu" fx:id="offre" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#checkoffre" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Offre" />
+    <Button id="menu" fx:id="forum" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#checkforum" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Forum" />
+    <Button id="menu" fx:id="Test" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#checkcertificat" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Certificat" />
+    <Button id="menu" fx:id="evente" layoutY="599.0" mnemonicParsing="false" onMouseClicked="#checkevente" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Evenement" />
+    <Label layoutX="276.0" layoutY="27.0" prefHeight="201.0" prefWidth="920.0" styleClass="test1" stylesheets="@../stylesheets/style.css" />
+    <TableView fx:id="tabfreelancer" layoutX="621.0" layoutY="328.0" onMouseClicked="#selectFreelancer" prefHeight="332.0" prefWidth="826.0">
+        <columns>
+            <TableColumn fx:id="tab_id" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="tab_email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tab_title" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="tab_skills" prefWidth="75.0" text="Skills" />
+            <TableColumn fx:id="tab_country" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="tab_name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="tab_password" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="tab_prix" prefWidth="75.0" text="Prix" />
+            <TableColumn fx:id="tab_education" prefWidth="75.0" text="Education" />
+            <TableColumn fx:id="tab_experience" prefWidth="75.0" text="Experience" />
+         <TableColumn fx:id="tab_contact" prefWidth="75.0" />
+        </columns>
+    </TableView>
+    <TextField fx:id="tfchercher" layoutX="858.0" layoutY="166.0" />
+    <Text layoutX="296.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freelancer Details" wrappingWidth="325.13671875">
+        <font>
+            <Font name="Bauhaus 93" size="38.0" />
+        </font>
+    </Text>
+    <Label layoutX="275.0" layoutY="27.0" prefHeight="201.0" prefWidth="1140.0" styleClass="test1" stylesheets="@style.css" />
+
+
+
+
+</AnchorPane>

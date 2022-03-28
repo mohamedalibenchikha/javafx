@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devit.workit.gui.CertificatController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="800.0" prefWidth="283.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <AnchorPane prefHeight="153.0" prefWidth="283.0" style="-fx-background-color: #A9A9A9;">
+               <children>
+                  <Label layoutX="33.0" layoutY="37.0" prefHeight="79.0" prefWidth="221.0" text="Dashboard" textFill="#126f80">
+                     <font>
+                        <Font name="System Italic" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="668.0" prefHeight="133.0" prefWidth="267.0" styleClass="test" stylesheets="@../../../style.css" />
+         </children>
+      </AnchorPane>
+      <Button id="menu" layoutY="198.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Utilisateurs" />
+      <Button id="menu" layoutY="278.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Freelancer" />
+      <Button id="menu" layoutY="356.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Offre" />
+      <Button id="menu" layoutY="435.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Forum" />
+      <Button id="menu" layoutY="515.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Certificat" />
+      <Button id="menu" fx:id="btntest" layoutY="599.0" mnemonicParsing="false" onAction="#btntest" prefHeight="59.0" prefWidth="251.0" stylesheets="@style.css" text="Test" />
+      <Label layoutX="275.0" layoutY="27.0" prefHeight="201.0" prefWidth="988.0" styleClass="test12" stylesheets="@../../../style.css" />
+      <TextField fx:id="tfnc" layoutX="399.0" layoutY="388.0" />
+      <Text layoutX="399.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text layoutX="343.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certficat" wrappingWidth="178.3203125">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Text>
+      <TableView fx:id="table2" layoutX="718.0" layoutY="273.0" onMouseClicked="#SelectCertificat" prefHeight="275.0" prefWidth="304.0">
+        <columns>
+          <TableColumn fx:id="colnomCer" prefWidth="303.0" text="Nom" />
+        </columns>
+      </TableView>
+      <Button layoutX="343.0" layoutY="494.0" mnemonicParsing="false" onAction="#AjouterCertificat" stylesheets="@style.css" text="Ajouter" />
+      <Button layoutX="426.0" layoutY="494.0" mnemonicParsing="false" onAction="#SupprimerCertificat" stylesheets="@style.css" text="Supprimer" />
+      <Button layoutX="532.0" layoutY="494.0" mnemonicParsing="false" onAction="#ModifierCertificat" stylesheets="@style.css" text="Modifier" />
+   </children>
+</AnchorPane>

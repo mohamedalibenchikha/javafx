@@ -1,0 +1,73 @@
+    
+.test{
+    
+    -fx-background-image: url("logo.jpg");
+    -fx-background-size: 100% 100%; 
+}
+.test1{
+    
+    -fx-background-image: url("logo1.jpg");
+    -fx-background-size: 100% 100%; 
+}
+.testdash{
+    
+    -fx-background-image: url("logoback.jpg");
+    -fx-background-size: 100% 100%; 
+}
+
+.test2{
+    -fx-background-color:  #f95151;
+    -fx-background-radius: 30;
+    -fx-fill: white;
+    
+}
+
+.textfield{
+    -fx-background-color:   #3D4956;
+    -fx-background-radius: 30;
+
+    
+    
+}
+
+.test3{
+    -fx-background-color:    #D3D3D3;
+    -fx-background-radius: 30;
+    -fx-fill: white;
+    -fx-font: Viner Hand ITC;
+    
+}
+
+.button{
+    -fx-background-color:  #f95151;
+    -fx-background-radius: 30;
+    -fx-fill:#3D4956
+}
+
+.testevent{
+    
+    -fx-background-image: url("logo.jpg");
+    -fx-background-size: 100% 100%; 
+}
+
+.testcompt{
+    
+    -fx-background-image: url("logo.jpg");
+    -fx-background-size: 100% 100%; 
+}
+.button1{
+-fx-background-insets: 0;
+-fx-background-radius :30;
+-fx-text-fill: white;
+-fx-background-color : #f95151;
+}
+.clicked{
+    -fx-background-color:#1389d8;
+    -fx-background-radius: 30;
+    -fx-fill:#3D4956
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="681.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devit.workit.gui.Categorie3Controller">
+   <children>
+      <TabPane layoutY="-3.0" prefHeight="688.0" prefWidth="1059.0" stylesheets="@style%20(1).css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Categorie">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="282.0" layoutY="164.0" text="Id " />
+                        <Label layoutX="274.0" layoutY="250.0" text="Nom" />
+                        <TextField fx:id="tfId" editable="false" layoutX="307.0" layoutY="196.0" />
+                        <TextField fx:id="tfNom" layoutX="307.0" layoutY="282.0" />
+                        <Button fx:id="btnAjout" layoutX="323.0" layoutY="341.0" mnemonicParsing="false" onAction="#AjouterCategorie" stylesheets="@style.css" text="Ajouter" />
+                        <Button fx:id="btnModif" layoutX="401.0" layoutY="341.0" mnemonicParsing="false" onAction="#ModifierCategorie" stylesheets="@style.css" text="Modifier" />
+                        <Button fx:id="btnSupp" layoutX="348.0" layoutY="381.0" mnemonicParsing="false" onAction="#SupprimerCategorie" stylesheets="@style.css" text="Supprimer" />
+                        <TableView fx:id="tableC" layoutX="523.0" layoutY="150.0" prefHeight="381.0" prefWidth="521.0">
+                          <columns>
+                            <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="col_nom" prefWidth="445.0" text="nom" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnActualiser" layoutX="959.0" layoutY="540.0" mnemonicParsing="false" onAction="#ActualiserCategorie" stylesheets="@style.css" text="Actualiser" />
+                        <Label layoutX="530.0" layoutY="113.0" text="Recherche" />
+                        <TextField fx:id="rNom" layoutX="604.0" layoutY="108.0" />
+                        <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="647.0" prefWidth="221.0" style="-fx-background-color: #D3D3D3;">
+                           <children>
+                              <AnchorPane prefHeight="168.0" prefWidth="222.0" style="-fx-background-color: #A9A9A9;">
+                                 <children>
+                                    <Label fx:id="accueil" layoutX="16.0" layoutY="54.0" onMouseClicked="#accueil" text="Dashboard" textFill="#126f80">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="26.0" layoutY="191.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="167.0" stylesheets="@style.css" text="Utilisateurs" />
+                              <Button layoutX="24.0" layoutY="253.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="162.0" stylesheets="@style.css" text="Freelancer" />
+                              <Button layoutX="26.0" layoutY="324.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="158.0" stylesheets="@style.css" text="Offre" />
+                              <Button layoutX="26.0" layoutY="388.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="158.0" stylesheets="@style.css" text="Forum" />
+                              <Button layoutX="30.0" layoutY="458.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="151.0" stylesheets="@style.css" text="Certificat" />
+                              <Button layoutX="36.0" layoutY="527.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="139.0" stylesheets="@style.css" text="Evenement" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

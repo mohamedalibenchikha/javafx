@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devit.workit.gui.ResetSendCodeFXMLController">
+   <children>
+      <Pane fx:id="getcodepane" layoutX="200.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="mailtf" layoutX="26.0" layoutY="58.0" promptText="votre Email" />
+            <Button fx:id="getcode" layoutX="66.0" layoutY="124.0" mnemonicParsing="false" onAction="#getcode" text="Confirmer" />
+         </children>
+      </Pane>
+      <Pane fx:id="panreset" layoutX="200.0" layoutY="-5.0" prefHeight="309.0" prefWidth="200.0" visible="false">
+         <children>
+            <Text layoutX="6.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="vous-avez récu votre code via Email" />
+            <TextField fx:id="codetf" layoutX="26.0" layoutY="130.0" promptText="Code" />
+            <Button fx:id="resetbtn" layoutX="65.0" layoutY="196.0" mnemonicParsing="false" onAction="#resetpassbtn" text="Confirmer" />
+         </children>
+      </Pane>
+      <Pane fx:id="panewpass" layoutX="199.0" layoutY="30.0" prefHeight="316.0" prefWidth="200.0" visible="false">
+         <children>
+            <TextField fx:id="newpasstf" layoutX="26.0" layoutY="67.0" promptText="nouveau mot de passe" />
+            <TextField fx:id="confirmtf" layoutX="26.0" layoutY="109.0" promptText="Confirmer mdp" />
+            <Button fx:id="Confirmer" layoutX="66.0" layoutY="161.0" mnemonicParsing="false" onAction="#confirmer" text="Confirmer" />
+            <Text fx:id="errorlb" layoutX="25.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.50781559944153" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devit.workit.gui.LoginController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="233.0" layoutX="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tfmail" focusColor="#003ae8" layoutX="216.0" layoutY="185.0" promptText="Saisir votre mail" unFocusColor="RED" />
+      <JFXPasswordField fx:id="tfmdp" focusColor="#00175e" layoutX="216.0" layoutY="234.0" promptText="Saisir votre mot de passe" unFocusColor="#eb0000" />
+      <JFXButton fx:id="btncon" layoutX="247.0" layoutY="291.0" onMouseClicked="#connecter" text="Se Connecter" textFill="#d30000" />
+   </children>
+</AnchorPane>
